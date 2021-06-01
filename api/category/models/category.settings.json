@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "remote_url": {
+      "type": "string"
+    },
+    "cid": {
+      "type": "biginteger"
+    },
+    "local_url": {
+      "type": "string"
+    },
+    "products": {
+      "via": "category",
+      "collection": "product"
+    }
+  }
+}
